@@ -1,0 +1,69 @@
+1. ores
+	I. neodydium (done)
+	II. copper
+	III. tin
+	IV. lead(not required)
+	V. silver(not required)
+2.machines teir 1
+	I.alloy furnace
+		a.cotains crafting interface
+		b.can contain liquid
+		c.requires coal or heatscource
+	II.stove
+		a. generates heat amount depending on the fuel used smallest being 50 heat from sticks 
+		b. uses any fuel scource
+		c. any fuel requireing object next to it is given heat
+		d. can contain a certain amount of heat
+		e. heat dissapates over time
+		f.can use liquid as fuel.
+	III.heat transmiter
+		a.doble pipe shape
+		b.transmits heat
+		c.has a 50 heat internal buffer
+		d.loses heat depending on total amount of pipes and blocks atached
+		e.loses heat faster than the stove
+		F.is a heat scource
+	IV.insulator teir 1
+		a.stores heat 
+		b.loses heat slower than stove
+		c.is not a heat scource
+		d.uses cloth insulation
+		e.oil in recipy if buildcraft is installed otherwise water
+	V.insulator teir 2
+		a.stores more heat than insulator teir 1
+		b.loses heat slower than insulator teir 1
+		c.is not a heat scource
+		d.uses rubber insulation
+	VI.insulator teir 3
+		a.stores more heat than insulator teir 2
+		b.loses heat slower than insulator teir 2
+		c.is not a heat scource
+		d.uses usses polimer insilation
+	VII.(steam powered)magnetic extractor
+		a.extracts metals slowly
+		b.puts out two dust and 1 coble/stone per input
+		c.requires water(/steam if railcraft is instaled)
+		d.requires fuel or heat source
+	VIII.melter
+		a.melts things into liquid
+		b.has liquid storage
+		c.outputs into buckets (or any mod added liquid pipes)
+		d.requires fuel or heat
+		e.works better on dusts
+	IX.(steam powered)crusher
+		a.crushes organicmater into useful dusts
+		b.requires water(/steam if railcraft is instaled)
+		c.has liquid storage
+		d.requires fuel or heat
+		e.can sometimes pull water from plants
+		f.has secondary liquid storage for liquid pulled from other organic materials
+		g.outputs and inputs into buckets (or any mod added liquid pipes)
+	X.(steam powered)extractor
+		a.extracts chemicals from dust and liquids
+		b.can sometimes require water(usualy for dusts)
+		c.has liquid storage
+		d.requires fuel or heat
+		e.can sometimes pull water from plants
+		f.has secondary liquid storage for chemicals
+		g.outputs and inputs into buckets (or any mod added liquid pipes)
+2.machines teir 2
