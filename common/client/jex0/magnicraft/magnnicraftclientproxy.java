@@ -16,7 +16,6 @@
 package client.jex0.magnicraft;
 
 import com.jex0.magnicraft.magnicraftproxy;
-import net.minecraftforge.client.MinecraftForgeClient;
 
 public class magnnicraftclientproxy extends magnicraftproxy
 {

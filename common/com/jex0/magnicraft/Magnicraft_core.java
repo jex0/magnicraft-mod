@@ -34,7 +34,7 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 @NetworkMod(clientSideRequired=true, serverSideRequired=false)
 public class Magnicraft_core
 {
-	public static final String ModId="jex0_magnicraft";
+	public static final String ModId="MGC";
     public static BlockOre neodydiumore;
     public static Item neodydiumbar;
     public static Block alloysmelter;

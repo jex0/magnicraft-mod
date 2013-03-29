@@ -31,7 +31,7 @@ public class neodydiumore extends BlockOre {
 	}
 	public void registerIcons(IconRegister par1IconRegister)
     {
-        this.blockIcon = par1IconRegister.registerIcon(Magnicraft_core.ModId+":"+ this.getUnlocalizedName2());
+        this.blockIcon = par1IconRegister.registerIcon("/Magnicraft_mod/rescource/textures"+":"+this.getUnlocalizedName2());
     }
 	
 
