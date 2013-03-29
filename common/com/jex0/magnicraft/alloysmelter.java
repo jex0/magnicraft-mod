@@ -18,25 +18,23 @@ package com.jex0.magnicraft;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.util.Icon;
 
 public class alloysmelter extends Block {
 
-	public alloysmelter(int par1, int par2) {
-		super(par1, par2, Material.rock);
-		setBlockName("alloy smelter");
+	public alloysmelter(int par1) {
+		super(par1, Material.rock);
+		setUnlocalizedName("alloy smelter");
 		this.setCreativeTab(CreativeTabs.tabBlock);
 	}
-public int getBlockTextureFromSide(int i){
-	switch(i){
-	case 0:return 19;
-	case 1:return 16;
-	case 2:return 0;
-	default:return 18;
-	}
+//public int getBlockTextureFromSide(int i){
+//	switch(i){
+//	case 0:return 19;
+//	case 1:return 16;
+//	case 2:return 0;
+//	default:return 18;
+//	}
 	
-	}
-	@Override
-	public String getTextureFile () {
-		return "/client/jex0/magnicraft/textures/blocks.png";
-	}
+//	}
+
 }

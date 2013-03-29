@@ -30,10 +30,11 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
-@Mod(modid="jex0_magnicraft", name="magnicraft", version="0.01")
+@Mod(modid=Magnicraft_core.ModId, name="magnicraft", version="0.01")
 @NetworkMod(clientSideRequired=true, serverSideRequired=false)
 public class Magnicraft_core
 {
+	public static final String ModId="jex0_magnicraft";
     public static BlockOre neodydiumore;
     public static Item neodydiumbar;
     public static Block alloysmelter;
@@ -44,20 +45,19 @@ public class Magnicraft_core
 	@SuppressWarnings("deprecation")
 	@Init
 	public void load(FMLInitializationEvent event) {
-		alloysmelter = new alloysmelter(501, 0);
+		alloysmelter = new alloysmelter(501);
 		GameRegistry.registerBlock(alloysmelter);
 		LanguageRegistry.addName(alloysmelter, "alloy smelter");
 		MinecraftForge.setBlockHarvestLevel(alloysmelter, "pickaxe", 0);
-		neodydiumore = new neodydiumore(500, 2);
+		neodydiumore = new neodydiumore(500);
 		GameRegistry.registerBlock(neodydiumore);
 		LanguageRegistry.addName(neodydiumore, "Neodium Ore");
 		MinecraftForge.setBlockHarvestLevel(neodydiumore, "pickaxe", 2);
 	    neodydiumbar = new neodydiumbar(550)
-	      .setItemName("neodiumbar")
-	      .setIconIndex(0);
+	      .setUnlocalizedName("neodiumbar");
 	    GameRegistry.addSmelting(Magnicraft_core.neodydiumore.blockID, new ItemStack(Magnicraft_core.neodydiumbar), 1.0F);
 		LanguageRegistry.addName(neodydiumbar, "Neodium Bar");
-		ItemStack furnace=new ItemStack(Block.stoneOvenIdle);
+		ItemStack furnace=new ItemStack(Block.furnaceIdle);
 		ItemStack netherrack=new ItemStack(Block.netherrack);
 		ItemStack ironbars=new ItemStack(Block.fenceIron);
 		ItemStack craftingtable=new ItemStack(Block.workbench);

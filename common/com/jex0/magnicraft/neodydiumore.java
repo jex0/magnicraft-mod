@@ -17,20 +17,22 @@ package com.jex0.magnicraft;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockOre;
+import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 
 public class neodydiumore extends BlockOre {
-	public neodydiumore(int id, int tex) {
-		super(id, tex);
+	public neodydiumore(int id) {
+		super(id);
 		
 		setHardness(3.0F);
 		setStepSound(Block.soundStoneFootstep);
-		setBlockName("neodiumore");
+		setUnlocalizedName("neodydiumore");
 		setCreativeTab(CreativeTabs.tabBlock);
 	}
+	public void registerIcons(IconRegister par1IconRegister)
+    {
+        this.blockIcon = par1IconRegister.registerIcon(Magnicraft_core.ModId+":"+ this.getUnlocalizedName2());
+    }
 	
-	@Override
-	public String getTextureFile () {
-		return "/client/jex0/magnicraft/textures/blocks.png";
-	}
+
 }

@@ -23,7 +23,6 @@ public class magnnicraftclientproxy extends magnicraftproxy
   @Override
   public void registerRendererthings()
   {
-	  MinecraftForgeClient.preloadTexture("/magnicraft-mod/resources/textures/blocks.png");
-	  MinecraftForgeClient.preloadTexture("/magnicraft-mod/resources/textures/items.png");
+
   }
 }

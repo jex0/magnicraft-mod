@@ -15,13 +15,11 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.*/
 package com.jex0.magnicraft;
 
-import net.minecraftforge.client.MinecraftForgeClient;
-
 public class magnicraftproxy
 {
   public void registerRendererthings()
   {
-	  MinecraftForgeClient.preloadTexture("/magnicraft-mod/resources/textures/blocks.png");
-	  MinecraftForgeClient.preloadTexture("/magnicraft-mod/resources/textures/items.png");
+	  
+	  
   }
 }

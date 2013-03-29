@@ -15,6 +15,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.*/
 package com.jex0.magnicraft;
 
+import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
@@ -26,7 +27,8 @@ public class neodydiumbar extends Item
     this.maxStackSize = 64;
     setCreativeTab(CreativeTabs.tabMaterials);
   }
-  public String getTextureFile() {
-    return "/client/jex0/magnicraft/textures/items.png";
-  }
+	public void updateIcons(IconRegister par1IconRegister)
+    {
+        this.iconIndex = par1IconRegister.registerIcon(Magnicraft_core.ModId+":"+ this.getUnlocalizedName());
+    }
 }
